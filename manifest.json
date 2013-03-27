@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Keeper Sweeper",
+    "description": "Removes keepers from CBS rankings",
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+            "matches": ["http://*.baseball.cbssports.com/rank/*"],
+            "js": ["jquery.min.js", "main.js"],
+            "css": ["big.css"],
+            "run_at": "document_end"
+        }
+    ]
+}
